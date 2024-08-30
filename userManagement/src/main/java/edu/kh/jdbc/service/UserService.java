@@ -1,5 +1,7 @@
 package edu.kh.jdbc.service;
 
+import java.util.List;
+
 import edu.kh.jdbc.dto.User;
 
 public interface UserService {
@@ -27,6 +29,29 @@ public interface UserService {
 	 * @throws Exception
 	 */
 	User login(String userId, String userPw) throws Exception;
+
+
+	/** 사용자 목록 조회
+	 * @return userList
+	 * @throws Exception
+	 */
+	List<User> selectAll() throws Exception;
+
+
+	/** 검색어가 아이디에 포함된 사용자 조회
+	 * @param searchId
+	 * @return userList
+	 * @throws Exception
+	 */
+	List<User> search(String searchId) throws Exception;
+
+
+	/** userNo가 일치하는 사용자 조회
+	 * @param userNo
+	 * @return user
+	 * @throws Exception
+	 */
+	User selectUesr(String userNo) throws Exception;
 	
 	
 	
