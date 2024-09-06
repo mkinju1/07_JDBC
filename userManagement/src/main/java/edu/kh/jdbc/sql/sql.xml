@@ -81,6 +81,26 @@
 	 </entry>
 	 
 	 
+	 <!-- 사용자 삭제 -->
+	 <entry key="deleteUser">
+	 	DELETE FROM TB_USER
+	 	WHERE USER_NO = ?
+	 </entry>
+	 
+	 
+	 
+	 <!-- 사용자 사용자 정보 수정 -->
+	 <entry key="updateUser">
+	 	UPDATE TB_USER
+	 	SET 
+	 		USER_PW = ?,
+	 		USER_NAME = ?
+	 	WHERE
+	 		USER_NO = ?
+	 </entry>
+	 
+	 
+	 
 	 
 
 	

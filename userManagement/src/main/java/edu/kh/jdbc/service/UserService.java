@@ -52,6 +52,22 @@ public interface UserService {
 	 * @throws Exception
 	 */
 	User selectUesr(String userNo) throws Exception;
+
+
+	/** 사용자 삭제
+	 * @param userNo
+	 * @return result
+	 * @throws Exception
+	 */
+	int deleteUser(int userNo) throws Exception;
+
+ 
+	/** 사용자 정보 수정
+	 * @param user
+	 * @return result
+	 * @throws Exception
+	 */
+	int updateUser(User user)  throws Exception;;
 	
 	
 	

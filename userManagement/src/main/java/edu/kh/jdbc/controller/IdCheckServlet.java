@@ -49,4 +49,3 @@ public class IdCheckServlet extends HttpServlet{
 	}
 	
 }
-

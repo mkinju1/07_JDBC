@@ -1,4 +1,4 @@
-package edu.kh.jdbc.common;
+package edu.kh.todolist.common;
 
 import java.io.FileInputStream;
 import java.sql.Connection;
@@ -63,7 +63,7 @@ public class JDBCTemplate {
 			
 			String filePath = 
 				JDBCTemplate.class
-				.getResource("/edu/kh/jdbc/sql/driver.xml").getPath();
+				.getResource("/edu/kh/todolist/sql/driver.xml").getPath();
 			
 			// -> 빌드(코드를 실행 가능한 상태로 만드는 것) 시
 			// 컴파일된 JDBCTemplate.class 파일의 위치에서
